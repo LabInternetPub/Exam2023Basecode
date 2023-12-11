@@ -27,7 +27,7 @@ In this application, **users** can create and edit **notes** as well as give per
 Notes have a title, content, creation date, and tags list. **Tags** are identified by their name (string) that can be used to classify notes.
 
 The relationship between users (owners) and notes is implemented as a @OneToMany relationship. It means that notes have a reference to their owner. See that the
-Note class implements the method isOwner(userId) that returns true if the given user is the note owner. You may want to use this method in Question 4.
+Note class implements the method isOwner(userId) that returns true if the given user is the note owner. 
 
 A **NotePermission** is a class that represents a user's permission over a note. A NotePermission has a user (the user that has permission),
 a note (the note that the user has permission to see and/or edit), and two booleans representing the permissions (view and/or edit). See that
