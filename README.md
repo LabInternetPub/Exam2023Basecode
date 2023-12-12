@@ -26,7 +26,7 @@ It is a good idea to use this tool window to track the TODOs you must do. You ca
 In this application, **users** can create and edit **notes** as well as give permission to view and/or edit notes to other users.
 Notes have a title, content, creation date, and tags list. **Tags** are identified by their name (string) that can be used to classify notes.
 
-The relationship between users (owners) and notes is implemented as a @OneToMany relationship. It means that notes have a reference to their owner. See that the
+The relationship between users (owners) and notes is implemented as a @ManyToOne relationship. It means that notes have a reference to their owner. See that the
 Note class implements the method isOwner(userId) that returns true if the given user is the note owner. 
 
 A **NotePermission** is a class that represents a user's permission over a note. A NotePermission has a user (the user that has permission),
